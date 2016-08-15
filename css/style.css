@@ -8,8 +8,7 @@ body {
   background-color: #90ab9c;
   margin: 0;
   padding: 0;
-  min-width: 900px;
-  max-width: 1200px;
+  width:  900px;
 }
 
 h1 {
@@ -60,4 +59,178 @@ h2 {
   min-height: 36px;
   margin-top: 10px;
   margin-bottom: 18px;
+}
+
+.phone {
+  float: right;
+  width: 200px;
+  min-height: 38px;
+}
+
+.gallery {
+  width: 100%;
+  min-height: 210px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.gallery-content {
+  width: 100%;
+  min-height: 66px;
+  margin-bottom: 25px;
+}
+
+.gallery-btn {
+  float: left;
+  width: 80px;
+  min-height: 25px;
+}
+
+.gallery-link {
+  float: right;
+  margin-right: 290px;
+  width: 281px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1687px;
+}
+
+.actions {
+  width: 100%;
+  min-height: 230px;
+  margin-bottom: 40px;
+}
+
+.action-item {
+  float: left;
+  width: 420px;
+}
+
+.action-item:last-child {
+  float: right;
+}
+
+.hits {
+  width: 100%;
+  min-height: 278px;
+  margin-bottom: 40px;
+}
+
+.hits-item {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.hits-item:last-child {
+  margin-right: 0px;
+}
+
+.advantages {
+  width: 100%;
+  min-height: 372px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.advantages span {
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.advantage-item {
+  float: left;
+  width: 400px;
+  min-height: 135px;
+  margin-left: 20px;
+}
+
+.news {
+  float: left;
+  width: 420px;
+  min-height: 220px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.subscription {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  width: 420px;
+  min-height: 220px;
+}
+
+.map {
+  width: 100%;
+}
+
+.address {
+  float: right;
+  margin-right: 20px;
+  margin-top: 63px;
+  width: 300px;
+  min-height: 300px;
+}
+
+.feedback {
+  width: 250px;
+  min-height: 47px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.main-footer {
+  width: 100%;
+  min-height: 100px;
+}
+
+.social {
+  float: left;
+  width: 200px;
+  min-height: 40px;
+  margin-left: 20px;
+  margin-bottom: 38px;
+  margin-right: 20px;
+}
+
+.container-link {
+  float: left;
+  width: 420px;
+  min-height: 40px;
+  margin-bottom: 38px;
+}
+
+.container-link-left {
+  float: left;
+  width: 200px;
+}
+
+.container-link-right {
+  float: right;
+  width: 220px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 190px;
+  min-height: 60px;
+  margin-right: 20px;
+  margin-top: 20px;
 }

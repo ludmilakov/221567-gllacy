@@ -29,14 +29,17 @@
       </div>
       </header>
       <div class="gallery">
-        <figure class="gallery-content">
-          <img src="img/gallery-1.jpg" width="700" height="600" alt="Крем-брюле и пломбир с малиновым джемом">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <a href="#">Давайте оба!</a>
-        </figure>
-        <button class="btn active"></button>
-        <button class="btn"></button>
-        <button class="btn"></button>
+          <div class="gallery-content">
+            <div class="gallery-btn">
+              <button class="btn active"></button>
+              <button class="btn"></button>
+              <button class="btn"></button>
+            </div>
+            <div class="gallery-link">
+              <a href="#">Давайте оба!</a>
+            </div>
+          </div>
       </div>
       <main class="container">
         <section class="actions">
@@ -73,22 +76,33 @@
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </article>
         </section>
-          <section class="advantages">
-            <span>Магазин Глэйси - это онлайн магазин по продаже мороденого
+        <section class="advantages">
+            <span>Магазин Глэйси - это онлайн магазин по продаже мороженого
               собственного производства на развес</span>
-            <div class="advantage-item">Все наше мороженое изготавливается на
+            <div class="advantage-item">
+              <img src="img/icecream.svg" width="50" height="50" alt="Мороженка">
+              <p>Все наше мороженое изготавливается на
               собственном производстве, с использованием современного оборудования
-              и проверенных временем технологий.</div>
-            <div class="advantage-item">Для приготовления мороженого используются
+              и проверенных временем технологий.</p>
+            </div>
+            <div class="advantage-item">
+              <img src="img/cow.svg" width="50" height="50" alt="Коровка">
+              <p>Закупка ингредиентов производится только
+                у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+                долговременное сотрудничество.</p>
+            </div>
+            <div class="advantage-item">
+              <img src="img/sheet.svg" width="50" height="50" alt="Листик">
+              <p>Для приготовления мороженого используются
                 настоящие сливки и молоко высочайшего качества. Все дополнительные
                 ингредиенты и добавки произведены из натурального, экологически
-                чистого сырья.</div>
-            <div class="advantage-item">Закупка ингредиентов производится только
-              у проверенных фермерских хозяйств и компаний, с которыми нас связывает
-              долговременное сотрудничество.</div>
-            <div class="advantage-item">Доставка нашего мороженого до заказчиков
-              осуществляется в специальном термопаке, который не дает мороженому
-              растаять в пути и позволяет сохранить превосходный вкус.</div>
+                чистого сырья.</p>
+            </div>
+            <div class="advantage-item">
+              <img src="img/thermometer.svg" width="50" height="50" alt="Градусник">
+              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+              растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </div>
           </section>
           <div class="news">
             <h2>Новое в нашем блоге</h2>
@@ -104,14 +118,15 @@
             </form>
           </div>
           <section class="map">
-            <img src="img/map-marker.png" width="900" height="430" alt="Карта">
             <div class="address">
               <p>Адрес главного офиса и офлайн магазина</p>
               <span>ул. Большая Конюшенная 19/8, Санк-Петербург</span>
               <p>Для заказов по телефону:</p>
               <span>8 812 450-25-25</span>
               <p>(c 10 до 20 ежедневно)</p>
-              <div class="feedback"><a href="#">Форма обратной связи</a></div>
+              <div class="feedback">
+                <a href="#">Форма обратной связи</a>
+              </div>
             </div>
           </section>
       </main>
@@ -122,11 +137,24 @@
           <a href="#" class="social-btn fb">Фэйсбук</a>
           <a href="#" class="social-btn vk">В контакте</a>
         </div>
-        <div class="container">
-          <a href="#" class="container-item">Для поставщиков</a>
-          <a href="#" class="container-item">О производстве</a>
-          <a href="#" class="container-item">>Наши документы</a>
-          <a href="#" class="container-item">Экологические стандарты</a>
+        <div class="container-link">
+          <div class="container-link-left">
+            <div>
+              <img src="img/heart.svg" width="17" height="15" alt="Сердечко">
+              <a href="#">Для поставщиков</a>
+            </div>
+            <div>
+              <a href="#">О производстве</a>
+            </div>
+          </div>
+          <div class="container-link-right">
+            <div>
+              <a href="#">Наши документы</a>
+            </div>
+            <div>
+              <a href="#">Экологические стандарты</a>
+            </div>
+          </div>
         </div>
         <section class="footer-copyright">
           <a class="btn" href="https://htmlacademy.ru"><img src="img/html-logo.png" width="110" height="37" class="html-logo" alt="html-logo"></a>
