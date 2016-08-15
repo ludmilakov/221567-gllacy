@@ -25,13 +25,10 @@ h2 {
 
 .main-header {
   width: 100%;
-  margin-bottom: 290px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   min-height: 112px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .clearfix::after {
@@ -55,7 +52,7 @@ h2 {
 
 .user-block {
   float: right;
-  width: 262px;
+  width: 276px;
   min-height: 36px;
   margin-top: 10px;
   margin-bottom: 18px;
@@ -75,6 +72,7 @@ h2 {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 290px;
 }
 
 .gallery h2 {
@@ -197,7 +195,7 @@ h2 {
 }
 
 .main-footer {
-  width: 100%;
+  width: 860px;
   min-height: 100px;
 }
 
@@ -233,4 +231,70 @@ h2 {
   min-height: 60px;
   margin-right: 20px;
   margin-top: 20px;
+}
+
+.breadcrumbs {
+  float: left;
+  width: 420px;
+  min-height: 15px;
+}
+
+.container-catalog {
+  width: 860px;
+  min-height: 1280px;
+  margin: auto;
+}
+
+.form {
+  width: 860px;
+  min-height: 135px;
+}
+
+.sort {
+  float: left;
+  width: 200px;
+  min-height: 67px;
+}
+
+.price {
+  float: left;
+  width: 240px;
+  min-height: 67px;
+}
+
+.fat {
+  float: left;
+  width: 420px;
+  min-height: 67px;
+}
+
+.fillers {
+  float: left;
+  width: 715px;
+  min-height: 67px;
+}
+
+.assort {
+  margin-top: 38px;
+  width: 860px;
+  margin-bottom: 45px;
+}
+
+.assort-item {
+  float: left;
+  width: 200px;
+  min-height: 315px;
+  margin-right: 20px;
+}
+
+.assort-item:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.paginator {
+  float: right;
+  width: 200px;
+  min-height: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
