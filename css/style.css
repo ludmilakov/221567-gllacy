@@ -4,7 +4,7 @@ body {
   line-height: 22px;
   color: #ffffff;
   font-weight: normal;
-  font-family: "Roboto", Arial;
+  font-family: "Roboto", Arial, serif;
   background-color: #90ab9c;
   margin: 0;
   padding: 0;
@@ -24,9 +24,8 @@ h2 {
 }
 
 .main-header {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 900px;
+  margin-right: 20px;
   padding-top: 10px;
   min-height: 112px;
 }
@@ -39,15 +38,28 @@ h2 {
 
 .logo {
   float: left;
-  width: 170px;
-  min-height: 64px;
+  width: 142px;
+  min-height: 74px;
+  padding-left: 15px;
 }
 
 .main-menu {
   float: left;
-  width: 426px;
+  width: 437px;
   min-height: 64px;
-  padding-top: 20px;
+  padding-top: 3px;
+}
+
+.main-menu li {
+  display: inline;
+}
+
+.main-menu a {
+  margin-right: 24px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .user-block {
@@ -64,34 +76,73 @@ h2 {
   min-height: 38px;
 }
 
-.gallery {
-  width: 100%;
-  min-height: 210px;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 290px;
+.slider {
+  position: relative;
+  top: -70px;
 }
 
-.gallery h2 {
-  text-align: center;
-  width: 100%;
+.slider h2 {
   font-size: 60px;
   line-height: 60px;
+  text-align: center;
 }
 
-.gallery-content {
-  width: 100%;
-  min-height: 66px;
-  margin-bottom: 25px;
+.slider-slides {
+  width: 300%;
+  transition: transform 0.1s ease;
 }
 
-.gallery-btn {
+.slider-slides img {
+    float: left;
+  }
+
+.slider-item {
   float: left;
-  width: 80px;
-  min-height: 25px;
+  margin-right: 115px;
+  margin-left: 125px;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-controls {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #ffffff;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(-0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-900px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-1800px);
 }
 
 .gallery-link {
@@ -101,25 +152,48 @@ h2 {
 }
 
 .container {
-  width: 100%;
+  width: 900px;
   padding-left: 20px;
   padding-right: 20px;
   min-height: 1687px;
 }
 
 .actions {
-  width: 100%;
+  width: 860px;
   min-height: 230px;
   margin-bottom: 40px;
 }
 
-.action-item {
+.action-1 {
   float: left;
-  width: 420px;
+  background-image: url("../img/crimson-background.jpg");
 }
 
-.action-item:last-child {
+.action-2 {
   float: right;
+  background-image: url("../img/chocolate-background.jpg");
+}
+
+.action-1,
+.action-2 {
+  width: 420px;
+  border-radius: 15px;
+  min-height: 230px;
+}
+
+.actions h2 {
+  margin-left: 16px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.actions p {
+  margin-left: 16px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .hits {
