@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #ffffff;
   font-weight: normal;
@@ -8,7 +8,7 @@ body {
   background-color: #90ab9c;
   margin: 0;
   padding: 0;
-  width:  900px;
+  width: 900px;
 }
 
 h1 {
@@ -178,7 +178,6 @@ h2 {
 .action-2 {
   width: 420px;
   border-radius: 15px;
-  min-height: 230px;
 }
 
 .actions h2 {
@@ -191,9 +190,20 @@ h2 {
 
 .actions p {
   margin-left: 16px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.actions a {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: #ed5b3d; /*вставить градиент*/
+  width: 190px;
+  min-height: 43px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .hits {
@@ -210,6 +220,14 @@ h2 {
 
 .hits-item:last-child {
   margin-right: 0px;
+}
+
+.hits-item img {
+  border-radius: 50%;
+}
+
+.hits-item p {
+  text-align: center;
 }
 
 .advantages {
