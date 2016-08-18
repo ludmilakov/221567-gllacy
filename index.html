@@ -60,7 +60,7 @@
                     <td>
                       <a class="item-delete" title="Удалить"></a>
                     </td>
-                    <td><img src="img/orange.png" width="33" height="33" alt="orange"></td>
+                    <td><img src="img/orange.jpg" width="33" height="33" alt="orange"></td>
                     <td>Пломбир с апельсиновым джемом</td>
                     <td>1,5 кг<span> x 200 руб.</span></td>
                     <td>300 руб.</td>
@@ -69,7 +69,7 @@
                     <td>
                       <a class="item-delete" title="Удалить"></a>
                     </td>
-                    <td><img src="img/strawberry.png" width="33" height="33" alt="strawberry"></td>
+                    <td><img src="img/strawberry.jpg" width="33" height="33" alt="strawberry"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td>1,5 кг<span> x 300 руб.</span></td>
                     <td>450 руб.</td>
@@ -81,6 +81,8 @@
               </div> <a class="cart-field-button button" href="#">Оформить заказ</a> </div>
           </div>
         </div>
+        <div class="phone">
+          <p>C 10 до 20, ежедневно</p> <span>8 812 450-25-25</span> </div>
       </div>
     </header>
     <main>
@@ -128,43 +130,57 @@
             </div> <a class="products-title" href="#">Сливочное крем-брюле с карамельной подливкой</a> </li>
         </ul>
       </section>
-      <section class="advantages"> <span>Магазин Глэйси - это онлайн магазин по продаже мороженого
-              собственного производства на развес</span>
-        <div class="advantage-item"> <img src="img/icecream.svg" width="50" height="50" alt="Мороженка">
-          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+      <section class="advantages">
+        <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+        <div class="advantage-top">
+          <p class="advantage-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p class="advantage-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         </div>
-        <div class="advantage-item"> <img src="img/cow.svg" width="50" height="50" alt="Коровка">
-          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="advantage-item"> <img src="img/sheet.svg" width="50" height="50" alt="Листик">
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="advantage-item"> <img src="img/thermometer.svg" width="50" height="50" alt="Градусник">
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="advantage-bottom">
+          <p class="advantage-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
+          <p class="advantage-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
         </div>
       </section>
-      <div class="news">
-        <h2>Новое в нашем блоге</h2> <a href="#">10 способов сервировки фруктовых щербетов к столу</a> </div>
-      <div class="subscription">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякойне нужной ерунды. Честно =)</p>
-        <form action="#" method="get">
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="submit" name="email" value="Отправить"> </form>
+      <div class="subscription-news-wrapper">
+        <section class="news">
+          <p>Новое в нашем блоге</p>
+          <h2><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2> </section>
+        <section class="subscription">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+          <div class="subscription-form">
+            <form action="#">
+              <input type="email" name="email" id="email" placeholder="Электронная почта" required="">
+              <input type="submit" value="Отправить" name="subscription"> </form>
+          </div>
+        </section>
       </div>
-      <section class="map">
-        <div class="address">
-          <p>Адрес главного офиса и офлайн магазина</p> <span>ул. Большая Конюшенная 19/8, Санк-Петербург</span>
-          <p>Для заказов по телефону:</p> <span>8 812 450-25-25</span>
-          <p>(c 10 до 20 ежедневно)</p>
-          <div class="feedback"> <a href="#">Форма обратной связи</a> </div>
-        </div>
-      </section>
     </main>
+    <section class="map">
+      <div class="address">
+        <p>Адрес главного офиса и
+          <br> офлайн магазина:</p>
+        <p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+        <p>Для заказов по телефону:</p> <a href="tel:+78124502525">8 812 450-25-25</a>
+        <p>(с 10 до 20 ежедневно)</p>
+        <div class="feedback"> <a href="#">Форма обратной связи</a>
+          <form action="#">
+            <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+            <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+            <textarea name="comment" id="comment" placeholder="Напишите что-нибудь" rows="4"></textarea>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer class="main-footer">
-      <div class="social"> <a href="#" class="social-btn twitter">Твиттер</a> <a href="#" class="social-btn inst">Инстаграмм</a> <a href="#" class="social-btn fb">Фэйсбук</a> <a href="#" class="social-btn vk">В контакте</a> </div>
+      <ul class="social">
+        <li><a href="#" class="social-btn twitter">Твиттер</a></li>
+        <li><a href="#" class="social-btn inst">Инстаграмм</a></li>
+        <li><a href="#" class="social-btn fb">Фэйсбук</a></li>
+        <li><a href="#" class="social-btn vk">В контакте</a></li>
+      </ul>
       <div class="container-link">
         <div class="container-link-left">
-          <div> <img src="img/heart.svg" width="17" height="15" alt="Сердечко"> <a href="#">Для поставщиков</a> </div>
+          <div> <a href="#">Для поставщиков</a> </div>
           <div> <a href="#">О производстве</a> </div>
         </div>
         <div class="container-link-right">
@@ -173,7 +189,7 @@
         </div>
       </div>
       <section class="footer-copyright">
-        <a class="btn" href="https://htmlacademy.ru"><img src="img/html-logo.png" width="110" height="37" class="html-logo" alt="html-logo"></a>
+        <a class="copyright" href="https://htmlacademy.ru"><img src="img/html-logo.png" width="110" height="37" class="html-logo" alt="html-logo"></a>
         <p>Сделано в <a href="https://htmlacademy.ru" class="html-link">HTML Academy</a> © 2016</p>
       </section>
     </footer>
