@@ -41,3 +41,40 @@ main {
   padding-left: 2.3%;
   width: auto;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  width: auto;
+  min-height: 70px;
+  background-color: #d2dab8;
+}
+
+.main-menu {
+  width: 71%;
+  float: left;
+  background-color: #cfcd93;
+}
+
+.header-right {
+  width: 22.2%;
+  float: right;
+  background-color: #cfcd93;
+}
+
+.plate {
+  float: right;
+  width: 22.2%;
+  min-height: 50px;
+  background-color: #83b8c3;
+}
+
+.slider {
+  width: auto;
+  min-height: 200px;
+  margin-top: 248px;
+}
