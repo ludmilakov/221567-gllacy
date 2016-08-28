@@ -67,8 +67,8 @@ main {
 }
 
 .plate {
-  float: right;
-  width: 22.2%;
+  width: auto;
+  text-align: right;
   min-height: 50px;
   background-color: #83b8c3;
 }
@@ -77,4 +77,118 @@ main {
   width: auto;
   min-height: 200px;
   margin-top: 248px;
+}
+
+.actions {
+  width: auto;
+  background-color: #282323;
+  margin-bottom: 40px;
+}
+
+.action-left {
+  float: left;
+  width: 46.6%;
+  margin-right: 2.2%;
+  min-height: 230px;
+  background-color: #83b8c3;
+}
+
+.action-right {
+  float: right;
+  width: 46.6%;
+  min-height: 230px;
+  background-color: #83b8c3;
+}
+
+.hits {
+  width: auto;
+  margin-bottom: 35px;
+  min-height: 280px;
+  background-color: #282323;
+}
+
+.advantages {
+  width: auto;
+  margin-bottom: 40px;
+  background-color: #83b8c3;
+}
+
+.advantage-left {
+  float: left;
+  width: 46.6%;
+  margin-right: 2.2%;
+  min-height: 280px;
+  background-color: #282323;
+}
+
+.advantage-right {
+  float: right;
+  width: 46.6%;
+  min-height: 280px;
+  background-color: #282323;
+}
+
+.subscription-news-wrapper {
+  width: auto;
+  margin-bottom: 40px;
+  background-color: #83b8c3;
+}
+
+.news {
+  float: left;
+  width: 46.6%;
+  min-height: 220px;
+  background-color: #282323;
+}
+
+.subscription {
+  float: right;
+  width: 46.6%;
+  min-height: 220px;
+  background-color: #282323;
+}
+
+.map {
+  width: 100%;
+  height: 433px;
+  position: relative;
+  background-color: #83b8c3;
+}
+
+.address{
+  width: 300px;
+  min-height: 308px;
+  position: absolute;
+  top: 64px;
+  bottom: 64px;
+  right: 2.2%;
+}
+
+.feedback form {
+  display: none;
+}
+
+.main-footer {
+  width: auto;
+  min-height: 100px;
+}
+
+.social {
+  float: left;
+  width: 22.2%;
+  margin-right: 2.2%;
+  min-height: 100px;
+}
+
+.container-link {
+  float: left;
+  width: 46.6%;
+  min-height: 100px;
+  margin-right: 2.2%;
+}
+
+.footer-copyright {
+  float: right;
+  width: 22.2%;
+  min-height: 100px;
 }
