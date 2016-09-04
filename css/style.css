@@ -16,7 +16,7 @@ body {
   line-height: normal;
 }
 
-h1{
+h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 400;
@@ -43,11 +43,12 @@ main {
 }
 
 main {
-    position: relative;
+  position: relative;
 }
 
-a:link, a:visited {
-    color: #ffffff;
+a:link,
+a:visited {
+  color: #ffffff;
 }
 
 .clearfix::after {
@@ -61,7 +62,7 @@ a:link, a:visited {
 }
 
 .main-header {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 .header-right {
@@ -97,11 +98,11 @@ a:link, a:visited {
 
 .plate .phone {
   vertical-align: top;
-    letter-spacing: 0.3px;
-    font-weight: 500;
-    font-size: 22px;
-    margin-right: -3px;
-    margin-top: -1px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  font-size: 22px;
+  margin-right: -3px;
+  margin-top: -1px;
 }
 
 .plate .phone-link {
@@ -127,19 +128,21 @@ a:link, a:visited {
 
 .action-left {
   float: left;
-  width: 46.6%;
+  width: 48.8%;
   margin-right: 2.2%;
   min-height: 210px;
   background-image: url(../img/crimson-background.jpg);
+  background-repeat: no-repeat;
   border-radius: 25px;
   padding-top: 20px;
 }
 
 .action-right {
   float: right;
-  width: 46.6%;
+  width: 48.8%;
   min-height: 210px;
   background-image: url(../img/chocolate-background.jpg);
+  background-repeat: no-repeat;
   border-radius: 25px;
   padding-top: 20px;
 }
@@ -177,24 +180,27 @@ a:link, a:visited {
 
 .news {
   float: left;
-  width: 46.6%;
+  width: 49%;
   min-height: 220px;
+  background-color: #ffffff;
   background: url(../img/strawberry-background.jpg);
   background-repeat: no-repeat;
+  background-position: 0 0;
   border-radius: 15px;
 }
 
 .news p {
   color: #5a5a5a;
-  margin-top: 25px;
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .news h2 {
   margin-left: 20px;
-  margin-right: 100px;
+  margin-right: 40%;
+  margin-top: -15px;
 }
 
 .news a {
@@ -207,7 +213,7 @@ a:link, a:visited {
 
 .subscription-wrapper {
   float: right;
-  width: 46.6%;
+  width: 49%;
   min-height: 220px;
   background: url(../img/post-background.jpg);
   border-radius: 15px;
@@ -215,12 +221,38 @@ a:link, a:visited {
 
 .subscription {
   background-color: #ffffff;
-  margin: 5px;
+  margin: -10px 5px;
   border-radius: 15px;
   color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
   padding-left: 20px;
+  min-height: 210px;
+}
+
+.subscription p {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.subscription-form input[type="email"] {
+  width: 360px;
+  min-height: 45px;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+.subscription-form input[type="submit"] {
+  min-width: 130px;
+  min-height: 45px;
+  border-radius: 20px;
+  background-color: #ed5c3d;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
 }
 
 .map {
@@ -330,7 +362,7 @@ a:link, a:visited {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .container-link {
@@ -368,11 +400,11 @@ a:link, a:visited {
 
 .slider {
   margin: 0 auto 35px;
-    padding-top: 314px;
-    padding-bottom: 5px;
-    min-height: 216px;
-    width: 700px;
-    text-align: center;
+  padding-top: 314px;
+  padding-bottom: 5px;
+  min-height: 216px;
+  width: 700px;
+  text-align: center;
 }
 
 .body input[type=radio] {
@@ -408,31 +440,31 @@ a:link, a:visited {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#btn-1:checked ~ .page-wrapper .slider-controls label[for=btn-1],
-#btn-2:checked ~ .page-wrapper .slider-controls label[for=btn-2],
-#btn-3:checked ~ .page-wrapper .slider-controls label[for=btn-3] {
+#btn-1:checked~ .page-wrapper .slider-controls label[for=btn-1],
+#btn-2:checked~ .page-wrapper .slider-controls label[for=btn-2],
+#btn-3:checked~ .page-wrapper .slider-controls label[for=btn-3] {
   background-color: #ffffff;
 }
 
-#btn-1:checked ~ .page-wrapper #slide-1,
-#btn-2:checked ~ .page-wrapper #slide-2,
-#btn-3:checked ~ .page-wrapper #slide-3 {
+#btn-1:checked~ .page-wrapper #slide-1,
+#btn-2:checked~ .page-wrapper #slide-2,
+#btn-3:checked~ .page-wrapper #slide-3 {
   display: block;
 }
 
-#btn-1:checked ~ .page-wrapper {
+#btn-1:checked~ .page-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-1.png");
   background-position: 50% 83px;
 }
 
-#btn-2:checked ~ .page-wrapper {
+#btn-2:checked~ .page-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-2.png");
   background-position: 50% 83px;
 }
 
-#btn-3:checked ~ .page-wrapper {
+#btn-3:checked~ .page-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-3.png");
   background-position: 50% 83px;
@@ -440,26 +472,26 @@ a:link, a:visited {
 
 .slider-title {
   font-size: 58px;
-   line-height: 60.35px;
-   margin: 0px auto 32px;
-   letter-spacing: 1.6px;
+  line-height: 60.35px;
+  margin: 0px auto 32px;
+  letter-spacing: 1.6px;
 }
 
 .slider-button {
   display: inline-block;
-    padding: 8px 40px 15px;
-    min-width: 100px;
-    max-width: 400px;
-    vertical-align: middle;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.3;
-    background-color: #f26843;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 40px;
+  padding: 8px 40px 15px;
+  min-width: 100px;
+  max-width: 400px;
+  vertical-align: middle;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+  background-color: #f26843;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 40px;
 }
 
 .nav-submenu-wrapper {
