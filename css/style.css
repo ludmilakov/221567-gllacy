@@ -377,12 +377,17 @@ a:link, a:visited {
   display: none;
 }
 
+.slide {
+  display: none;
+}
+
 .slider-controls {
   position: absolute;
   top: 490px;
   left: 2.3%;
   z-index: 2;
   font-size: 0;
+  margin-left: 2px;
 }
 
 .slider-controls label {
@@ -432,10 +437,11 @@ a:link, a:visited {
 }
 
 .slider-title {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   font-weight: 800;
   font-size: 60px;
   line-height: 60.35px;
+  margin-top: -5px;
 }
 
 .slider-button {
