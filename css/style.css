@@ -365,12 +365,12 @@ a:link, a:visited {
 }
 
 .slider {
-  margin: 0 auto 32px;
-  padding-top: 319px;
-  padding-bottom: 5px;
-  min-height: 214px;
-  width: 700px;
-  text-align: center;
+  margin: 0 auto 35px;
+    padding-top: 314px;
+    padding-bottom: 5px;
+    min-height: 216px;
+    width: 700px;
+    text-align: center;
 }
 
 .body input[type=radio] {
@@ -383,11 +383,11 @@ a:link, a:visited {
 
 .slider-controls {
   position: absolute;
-  top: 490px;
+  top: 486px;
   left: 2.3%;
   z-index: 2;
   font-size: 0;
-  margin-left: 2px;
+  margin-left: 0px;
 }
 
 .slider-controls label {
@@ -437,28 +437,27 @@ a:link, a:visited {
 }
 
 .slider-title {
-  margin-bottom: 30px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 60.35px;
-  margin-top: -5px;
+  font-size: 58px;
+   line-height: 60.35px;
+   margin: 0px auto 32px;
+   letter-spacing: 1.6px;
 }
 
 .slider-button {
   display: inline-block;
-  padding: 9px 43px 13px;
-  min-width: 100px;
-  max-width: 400px;
-  vertical-align: middle;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  font-weight: 500;
-  font-size: 31.48px;
-  line-height: 1.3;
-  background-color: #f26843;
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 40px;
+    padding: 8px 40px 15px;
+    min-width: 100px;
+    max-width: 400px;
+    vertical-align: middle;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.3;
+    background-color: #f26843;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 40px;
 }
 
 .nav-submenu-wrapper {
