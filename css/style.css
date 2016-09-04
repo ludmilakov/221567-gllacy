@@ -7,10 +7,10 @@ body {
 
 body {
   width: 900px;
-  /*max-width: 1200px;*/
+  max-width: 1200px;
   background-color: #849d8f;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
   line-height: normal;
@@ -19,7 +19,7 @@ body {
 h1 {
   font-size: 35px;
   line-height: 41px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 h2 {
@@ -48,33 +48,24 @@ main {
   clear: both;
 }
 
-.main-header {
-  width: auto;
-  min-height: 70px;
-}
-
 .main-menu {
-  width: 71%;
   float: left;
 }
 
 .header-right {
-  width: 22.2%;
   float: right;
   padding-top: 22px;
+}
+
+.logo {
+  float: left;
+  padding-top: 10px;
 }
 
 .plate {
   width: auto;
   text-align: right;
   min-height: 50px;
-}
-
-.slider {
-  width: auto;
-  min-height: 200px;
-  margin-top: 248px;
-  margin-bottom: 40px;
 }
 
 .actions {
@@ -186,15 +177,16 @@ main {
   position: relative;
 }
 
-.address{
-  width: 300px;
+.address {
+  width: 275px;
+  border-radius: 25px;
   min-height: 308px;
   position: absolute;
   top: 64px;
   bottom: 64px;
   right: 2.2%;
   background-color: #ffffff;
-  color:#323232;
+  color: #323232;
   padding-left: 25px;
 }
 
@@ -228,17 +220,16 @@ main {
 }
 
 .slider {
-    position: relative;
-    margin: 0 auto 32px;
-    padding-top: 319px;
-    padding-bottom: 5px;
-    min-height: 214px;
-    width: 700px;
-    text-align: center;
+  margin: 0 auto 32px;
+  padding-top: 319px;
+  padding-bottom: 5px;
+  min-height: 214px;
+  width: 700px;
+  text-align: center;
 }
 
 .slider input[type=radio] {
-    display: none;
+  display: none;
 }
 
 .slide {
@@ -327,7 +318,7 @@ main {
   list-style: none;
 }
 
-.header-menu > li {
+.header-menu> li {
   position: relative;
   display: inline-block;
 }
@@ -338,10 +329,6 @@ main {
   padding-left: 35px;
   font-size: 16px;
   line-height: 18px;
-}
-
-.logo {
-  padding-top: 10px;
 }
 
 .search {
@@ -474,7 +461,6 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .products li {
@@ -501,7 +487,7 @@ main {
 }
 
 .products-image {
-position: relative;
+  position: relative;
 }
 
 .products-price span {
@@ -516,15 +502,15 @@ position: relative;
   text-align: center;
 }
 
-
-.advantages h2{
+.advantages h2 {
   margin-left: 20px;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
 }
+
 .advantage-description {
-  color:  #323232;
+  color: #323232;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 10px;
