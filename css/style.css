@@ -15,8 +15,6 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   line-height: normal;
 }
-
-h1 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 400;
@@ -283,28 +281,50 @@ a:link, a:visited {
   min-height: 100px;
 }
 
+.social li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
 .social {
   float: left;
-  width: 22.2%;
   margin-right: 2.2%;
   min-height: 100px;
   margin-top: 35px;
 }
 
-.social li {
-  display: inline-block;
-}
-
 .social-btn {
+  float: left;
   width: 37px;
   height: 37px;
-  margin-right: 12px;
+  margin-right: 10px;
   border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .twitter {
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inst {
+  background-image: url(../img/inst.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fb {
+  background-image: url(../img/fb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vk {
+  background-image: url(../img/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hidden {
@@ -316,6 +336,26 @@ a:link, a:visited {
   width: 46.6%;
   min-height: 100px;
   margin-right: 2.2%;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 35px;
+}
+
+.container-link-left {
+  float: left;
+  padding-left: 59px;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 40px 3px;
+}
+
+.container-link-right {
+  float: left;
+  margin-left: 30px;
+}
+
+.container-link-selected {
+  font-weight: 700;
 }
 
 .footer-copyright {
@@ -335,12 +375,6 @@ a:link, a:visited {
 
 .body input[type=radio] {
   display: none;
-}
-
-.slide {
-  float: left;
-  width: 860px;
-  min-height: 220px;
 }
 
 .slider-controls {
@@ -367,31 +401,34 @@ a:link, a:visited {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#btn-1:checked~ .page-wrapper .slider-controls label[for=btn-1],
-#btn-2:checked~ .page-wrapper .slider-controls label[for=btn-2],
-#btn-3:checked~ .page-wrapper .slider-controls label[for=btn-3] {
+#btn-1:checked ~ .page-wrapper .slider-controls label[for=btn-1],
+#btn-2:checked ~ .page-wrapper .slider-controls label[for=btn-2],
+#btn-3:checked ~ .page-wrapper .slider-controls label[for=btn-3] {
   background-color: #ffffff;
 }
 
-#btn-1:checked~ .page-wrapper #slide-1,
-#btn-2:checked~ .page-wrapper #slide-2,
-#btn-3:checked~ .page-wrapper #slide-3 {
+#btn-1:checked ~ .page-wrapper #slide-1,
+#btn-2:checked ~ .page-wrapper #slide-2,
+#btn-3:checked ~ .page-wrapper #slide-3 {
   display: block;
 }
 
-#btn-1:checked~ .page-wrapper {
+#btn-1:checked ~ .page-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-1.png");
+  background-position: 128px 83px;
 }
 
-#btn-2:checked~ .page-wrapper {
+#btn-2:checked ~ .page-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-2.png");
+  background-position: 128px 83px;
 }
 
-#btn-3:checked~ .page-wrapper {
+#btn-3:checked ~ .page-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-3.png");
+  background-position: 128px 83px;
 }
 
 .slider-title {
