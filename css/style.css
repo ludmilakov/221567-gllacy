@@ -502,12 +502,6 @@ li .nav-submenu-active {
   line-height: 1.3;
 }
 
-.full {
-  padding-right: 14px;
-  color: #000000; /*почему не срабатывает черный шрифт?, как убрать белую корзинку?*/
-  background: #f8f7f4 url("../img/icons/sprite.png") no-repeat 6px -44px;
-}
-
 .cart:hover > .cart-link {
   background: #f8f7f4;
   color: #000000;
@@ -515,6 +509,17 @@ li .nav-submenu-active {
 
 .cart:hover .cart-field-wrapper {
   display: block;
+}
+
+.cart-full::before {
+  background: url("../img/icons/sprite.png") no-repeat -9px -47px;
+  background-color: transparent;
+  content: "";
+}
+
+.cart-full > .cart-link {
+  background: #f8f7f4;
+  color: #000000;
 }
 
 .cart-field-wrapper {
