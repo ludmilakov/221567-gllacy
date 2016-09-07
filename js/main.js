@@ -18,6 +18,7 @@ ymaps.ready(function() {
       ],
       iconImageOffset: [-39, -139]
     });
+
   a.geoObjects.add(b),
   a.controls.remove("rulerControl"),
   a.controls.remove("searchControl"),
@@ -38,6 +39,7 @@ var link = document.querySelector(".contacts-info-button"),
   comment = popup.querySelector("[name=comment]"),
   storage_user = localStorage.getItem("username"),
   storage_email = localStorage.getItem("email");
+
 link.addEventListener("click", function(a) {
   a.preventDefault(),
   popup.classList.add("feedback-form-show"),
@@ -46,20 +48,24 @@ link.addEventListener("click", function(a) {
     ? (username.value = storage_user, email.value = storage_email, comment.focus())
     : username.focus()
 }),
+
 close.addEventListener("click", function(a) {
   a.preventDefault(),
   popup.classList.remove("feedback-form-show"),
   popup.classList.remove("feedback-form-error"),
   overlay.classList.remove("feedback-form-overlay-show")
 }),
+
 form.addEventListener("submit", function(a) {
   username.value && email.value && comment.value
     ? (localStorage.setItem("username", username.value), localStorage.setItem("email", email.value))
     : (a.preventDefault(), popup.classList.remove("feedback-form-error"), popup.offsetWidth = popup.offsetWidth, popup.classList.add("feedback-form-error"))
 }),
+
 window.addEventListener("keydown", function(a) {
   27 === a.keyCode && popup.classList.contains("feedback-form-show") && (popup.classList.remove("feedback-form-show"), popup.classList.remove("feedback-form-error"), overlay.classList.remove("feedback-form-overlay-show"))
 }),
+
 overlay.addEventListener("click", function(a) {
   popup.classList.contains("feedback-form-show") && (popup.classList.remove("feedback-form-show"), popup.classList.remove("feedback-form-error"), overlay.classList.remove("feedback-form-overlay-show"))
 });
