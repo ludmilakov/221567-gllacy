@@ -6,8 +6,6 @@ html {
 }
 
 body {
-  min-width: 900px;
-  max-width: 1200px;
   background-color: #849d8f;
   color: #ffffff;
   font-weight: 400;
@@ -18,8 +16,11 @@ body {
 
 .page-wrapper {
   min-width: 900px;
+  max-width: 1200px;
   background-position: top center;
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-wrapper::after,
@@ -31,6 +32,13 @@ body {
 
 .page-wrapper::after {
   background-image: url("../img/backgrounds/bg_slide-2.png");
+}
+
+.footer-wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer,
@@ -128,6 +136,20 @@ input[type=text]:focus,
 textarea:focus {
   border-color: rgba(46, 136, 228, 0.5);
   box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.5);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: rgba(46, 136, 228, 0.5);
+  position: absolute;
+  top: -20px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+input:-moz-placeholder {
+  color: rgba(46, 136, 228, 0.5);
+  position: absolute;
+  top: -20px;
 }
 
 .main-menu {
@@ -517,6 +539,7 @@ li .nav-submenu-active {
 .cart-full > .cart-link {
   background: #f8f7f4;
   color: #000000;
+  padding-right: 20px;
 }
 
 .cart-field-wrapper {
@@ -1042,7 +1065,6 @@ body > input[type=radio] {
 }
 
 .news p {
-  margin-bottom: 5px;
   max-width: 290px;
   color: #666666;
   font-weight: 500;
@@ -1056,6 +1078,9 @@ body > input[type=radio] {
   color: #333333;
   font-weight: 700;
   font-size: 24px;
+  text-decoration: underline;
+  margin-top: -10px;
+
 }
 
 .news a:hover {
@@ -1139,10 +1164,14 @@ body > input[type=radio] {
   display: none;
 }
 
+.contact-wrapper {
+  position: relative;
+}
+
 .contacts-info {
   position: absolute;
   top: 65px;
-  right: 2.3%;
+  right: 2.2%;
   z-index: 2;
   padding: 28px 25px 25px;
   min-height: 240px;
@@ -1159,7 +1188,7 @@ body > input[type=radio] {
   line-height: 20px;
 }
 
-.contacts .contacts-tel,
+.contacts-info .contacts-tel,
 .contacts-info b {
   display: block;
   margin-bottom: 19px;
@@ -1167,7 +1196,7 @@ body > input[type=radio] {
   line-height: 24px;
 }
 
-.contacts .contacts-tel {
+.contacts-info .contacts-tel {
   margin-top: 5px;
   margin-bottom: 2px;
   color: #000000;
@@ -1764,7 +1793,7 @@ body > input[type=radio] {
 
 .paginator {
   float: right;
-  margin: 42px 0 40px;
+  margin: 42px 0 31px;
   padding: 0;
   list-style: none;
   font-size: 0;
@@ -1847,6 +1876,7 @@ body > input[type=radio] {
   padding: 0;
   list-style: none;
   font-size: 0;
+  margin-top: 18px;
 }
 
 .footer-social li {
@@ -1905,6 +1935,7 @@ body > input[type=radio] {
   margin: 0 auto;
   padding: 0;
   vertical-align: top;
+  margin-top: 16px;
 }
 
 .container-link-left,

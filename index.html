@@ -6,7 +6,7 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <input class="hidden" type="radio" id="btn-1" name="toggle" checked="">
@@ -64,7 +64,7 @@
             <a class="login-link" href="#">Вход</a>
             <div class="login-field-wrapper">
               <div class="login-field">
-                <form>
+                <form action="">
                   <input type="email" name="email" placeholder="Электронная почта" required="">
                   <input type="password" name="password" placeholder="Пароль" required="">
                   <input type="submit" value="Войти" name="enter">
@@ -214,9 +214,7 @@
         <div class="subscription-news-wrapper clearfix">
           <section class="news">
             <p>Новое в нашем блоге</p>
-            <h2>
-              <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-            </h2>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </section>
           <div class="subscription-wrapper">
             <section class="subscription">
@@ -231,8 +229,7 @@
           </div>
         </div>
       </main>
-      <section class="contacts">
-        <div class="contacts-map" id="ya-map"></div>
+      <div class="contact-wrapper">
         <div class="contacts-info">
           <p>Адрес главного офиса и
             <br>
@@ -256,7 +253,12 @@
             </form>
           </div>
         </div>
+      </div>
+    </div>
+      <section class="contacts">
+        <div class="contacts-map" id="ya-map"></div>
       </section>
+      <div class="footer-wrapper">
       <footer class="main-footer clearfix">
         <ul class="footer-social clearfix">
           <li>
