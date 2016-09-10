@@ -763,9 +763,9 @@ body > input[type=radio] {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#btn-1:checked ~ .page-wrapper .slider-controls label[for=btn-1],
-#btn-2:checked ~ .page-wrapper .slider-controls label[for=btn-2],
-#btn-3:checked ~ .page-wrapper .slider-controls label[for=btn-3] {
+#btn-1:checked ~ .main-wrapper .slider-controls label[for=btn-1],
+#btn-2:checked ~ .main-wrapper .slider-controls label[for=btn-2],
+#btn-3:checked ~ .main-wrapper .slider-controls label[for=btn-3] {
   background-color: #ffffff;
 }
 
@@ -775,19 +775,21 @@ body > input[type=radio] {
   display: block;
 }
 
-#btn-1:checked ~ .page-wrapper {
-  background-color: #849d8f;
-  background-image: url("../img/backgrounds/bg_slide-1.png");
+#btn-1:checked ~ .main-wrapper {
+  background: #849d8f url("../img/backgrounds/bg_slide-1.png") no-repeat top center;
+
 }
 
-#btn-2:checked ~ .page-wrapper {
-  background-color: #8996a6;
-  background-image: url("../img/backgrounds/bg_slide-2.png");
+#btn-2:checked ~ .main-wrapper {
+  background: #8996a6 url("../img/backgrounds/bg_slide-2.png") no-repeat top center;
 }
 
-#btn-3:checked ~ .page-wrapper {
-  background-color: #9d8b84;
-  background-image: url("../img/backgrounds/bg_slide-3.png");
+#btn-3:checked ~ .main-wrapper {
+  background: #9d8b84 url("../img/backgrounds/bg_slide-3.png") no-repeat top center;
+}
+
+.main-wrapper {
+  width: 100%;
 }
 
 .slider-title {
@@ -1156,7 +1158,7 @@ body > input[type=radio] {
 .contacts-map {
   width: 100%;
   height: 100%;
-  background: #e7dabc url("../img/backgrounds/map-background.jpg") no-repeat 0 0;
+  background: #e7dabc url("../img/backgrounds/map-background.jpg") no-repeat center;
   font-size: 0;
 }
 
