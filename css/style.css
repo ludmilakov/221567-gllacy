@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  min-width: 900px;
   background-color: #849d8f;
   color: #ffffff;
   font-weight: 400;
@@ -1389,7 +1390,7 @@ body > input[type=radio] {
 }
 
 .breadcrumbs {
-  margin: 24px 0 8px;
+  margin: 24px 0 4px;
   padding: 0;
   list-style: none;
   font-size: 0;
